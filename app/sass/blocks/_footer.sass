@@ -31,9 +31,18 @@
 .footer__icon
   //width: 34px
   //height: 34px
-.copywriter
+.copywrite
   display: flex
   align-items: center
   margin-right: 30px 
   &__text
     margin: 0
+    position: relative
+    &:after
+      content: '©'
+      position: absolute
+      width: 10px
+      height: 10px
+      //background-color: #FFDE02
+      top: 1px 
+      right: -15px
