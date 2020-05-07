@@ -4,32 +4,32 @@
   flex-direction: column
   align-items: center
   // height: calc(100vh - 141px)
-  background-color: #B34EE9
+  background-color: $purple
   &__item 
     // height: calc(100% / 3)
     min-height: 250px
     width: 500px
     font-size: 60px
-    color: white
+    color: $white
     padding: 40px
     &--one 
-      background-color: $violet
+      background-color: $fuchsia
       position: relative
       cursor: pointer
       transition: all 0.5s ease
       top: 0
       left: 0
     &--two 
-      background-color: #3AE2CE
+      background-color: $turquoise
       position: relative
     &--three 
-      background-color: #FFDD00
+      background-color: $yellow
       position: relative
       overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
-    color: orange 
+    color: $orange 
   &__text-decor:before 
     content: '$'
   &__text-decor:after 
@@ -37,7 +37,7 @@
   &__icon
     width: 70px
     height: 70px
-    background-color: white
+    background-color: $white
     display: block
     border-radius: 50%
     position: absolute
@@ -45,12 +45,12 @@
       left: 0
       top: 0
       border-radius: 0%
-      background-color: #01FFAA
+      background-color: $turquoise-light
       transform: translate(-50%, 20%) rotate(45deg)
       &:before
         content: '1'
         position: absolute
-        color: black
+        color: $black
         top: 0
         left: 0
         transform: rotate(-45deg) translate(120%, 15%)
@@ -60,7 +60,7 @@
       top: 50%
       transform: translate(50%, -50%)
       border-radius: 0
-      color: black
+      color: $black
       font-size: 50px
       font-style: normal
       text-align: center
@@ -69,7 +69,7 @@
         position: absolute
         width: 20px
         height: 20px
-        background-color: #FFDE02
+        background-color: $yellow
         top: 0
         left: 0
         transform: translate(-50%, -50%)
@@ -78,18 +78,16 @@
         position: absolute
         width: 20px
         height: 20px
-        background-color: #FFDE02
+        background-color: $yellow
         bottom: 0
         right: 0
         transform: translate(50%, 50%)
-
-
     &--three
       right: 0
       bottom: 0
       transform: translate(50%, 0)
-      color: black
-      background-color: #01FFAA
+      color: $black
+      background-color: $turquoise-light
       font-size: 50px
       font-style: normal
       text-align: center
