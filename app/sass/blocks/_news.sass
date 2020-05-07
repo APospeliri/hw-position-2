@@ -25,7 +25,7 @@
     &--three 
       background-color: $yellow
       position: relative
-      overflow: hidden
+      //overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
@@ -87,10 +87,38 @@
       bottom: 0
       transform: translate(50%, 0)
       color: $black
-      background-color: $turquoise-light
+      background-color: $fuchsia
       font-size: 50px
       font-style: normal
       text-align: center
+      cursor: pointer
+      //z-index: 10
+      &:before
+        content: ''
+        position: absolute
+        top: -5px
+        left: -5px
+        width: 80px
+        height: 80px
+        background-color: $white
+        border-radius: 50%
+        transition: border-radius 1s, opacity 1s
+      &:after
+        content: '3'
+        position: absolute
+        top: 0
+        left: 0
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        background-color: $fuchsia
+    &:hover
+      &:before
+        opacity: 0
+        border-radius: 10%
+
+
+
 
   
 
