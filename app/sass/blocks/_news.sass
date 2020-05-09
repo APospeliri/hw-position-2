@@ -19,12 +19,21 @@
       transition: all 0.5s ease
       top: 0
       left: 0
+      &:before
+        content: "1"
+        color: #000000
+        display: block
+        position: absolute
+        transform: translate(-52px, -32px)
+        font-style: normal
+        z-index: 1
     &--two 
       background-color: #3AE2CE
       position: relative
     &--three 
       background-color: #FFDD00
       position: relative
+      overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
@@ -45,6 +54,24 @@
       top: 0
       border-radius: 0%
       transform: translate(-50%, 20%) rotate(45deg)
+      background-color: #41e8b3
+      &::after
+        content: ""
+        background-color: #2375b0
+        display: block
+        position: absolute
+        height: 70px
+        width: 1px
+      &::before
+        content: ""
+        background-color: #2375b0
+        display: block
+        position: absolute
+        transform: rotate(-90deg)
+        bottom: -35px
+        right: 34px
+        height: 70px
+        width: 1px
     &--two
       right: 0
       top: 50%
@@ -54,14 +81,32 @@
       font-size: 50px
       font-style: normal
       text-align: center
+      &:after
+        content: ""
+        display: block
+        width: 15px
+        height: 15px
+        position: absolute
+        background-color: #FFDD00
+        left: 70px
+        transform: translate(-50%, -100%)
+      &::before
+        content: ""
+        display: block
+        width: 15px
+        height: 15px
+        position: absolute
+        transform: translate(-50%, -50%)
+        background-color: #FFDD00
     &--three
       right: 0
       bottom: 0
       transform: translate(50%, 0)
+      border-radius: 100%
+      background-color: #3AE2CE
       color: black
       font-size: 50px
       font-style: normal
       text-align: center
-
-
+      &::before
 // news END
