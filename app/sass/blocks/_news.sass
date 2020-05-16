@@ -19,14 +19,6 @@
       transition: all 0.5s ease
       top: 0
       left: 0
-      &:before
-        content: "1"
-        color: #000000
-        display: block
-        position: absolute
-        transform: translate(-52px, -32px)
-        font-style: normal
-        z-index: 1
     &--two 
       background-color: #3AE2CE
       position: relative
@@ -55,25 +47,15 @@
       border-radius: 0%
       transform: translate(-50%, 20%) rotate(45deg)
       background-color: #41e8b3
-      &:after
-    // элемент дает синюю полосочку на левой верхней грани голубого ромба(news__icon--two)
-        content: ""
-        background-color: #2375b0
-        display: block
-        position: absolute
-        height: 70px
-        width: 1px
       &:before
-     // элемент дает синюю полосочку на левой нижнй грани голубого ромба(news__icon--two)
-        content: ""
-        background-color: #2375b0
+        content: "1"
+        height: 1em
         display: block
         position: absolute
-        transform: rotate(-90deg)
-        bottom: -35px
-        right: 34px
-        height: 70px
-        width: 1px
+        color: black
+        // border: 1px dashed green
+        font-style: normal
+        transform: rotate(-45deg) translate(50%, 20%) 
     &--two
       right: 0
       top: 50%
