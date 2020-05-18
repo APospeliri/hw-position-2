@@ -11,8 +11,8 @@
   &__nav 
     display: flex
     justify-content: center
-    border-top: 3px solid #303D43
-    border-bottom: 3px solid #303D43
+    border-top: 3px solid $grey
+    border-bottom: 3px solid $grey
     padding: 8px 0
   &__link 
     font-size: 18px
@@ -22,9 +22,25 @@
     letter-spacing: 1px
     position: relative
     margin-right: 30px
-    border-bottom: 2px solid #303D43
+    position: relative
+    &:after
+      content: ""
+      height: 2px
+      width: 100%
+      display: flex
+      position: absolute
+      background-color: $grey
+      align-items: center
+      justify-content: center
+    &:hover:after
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color:$purple
+      transition: 1s
+      width: calc(100% + 20px)
+      margin-left: -10px
     &:hover
       text-decoration: none
-      color: #303D43
-      border: 12px solid $purple
+      color: $grey
 //header END
