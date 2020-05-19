@@ -4,13 +4,13 @@
   flex-direction: column
   align-items: center
   // height: calc(100vh - 141px)
-  background-color: #B34EE9
+  background-color: $purple
   &__item 
     // height: calc(100% / 3)
     min-height: 250px
     width: 500px
     font-size: 60px
-    color: white
+    color: $white
     padding: 40px
     &--one 
       background-color: $violet
@@ -20,16 +20,16 @@
       top: 0
       left: 0
     &--two 
-      background-color: #3AE2CE
+      background-color: $blue
       position: relative
     &--three 
-      background-color: #FFDD00
+      background-color: $yelow
       position: relative
       overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
-    color: orange 
+    color: $orange 
   &__text-decor:before 
     content: '$'
   &__text-decor:after 
@@ -37,7 +37,7 @@
   &__icon
     width: 70px
     height: 70px
-    background-color: white
+    background-color: $white
     display: block
     border-radius: 50%
     position: absolute
@@ -46,14 +46,13 @@
       top: 0
       border-radius: 0%
       transform: translate(-50%, 20%) rotate(45deg)
-      background-color: #41e8b3
+      background-color: $blue
       &:before
         content: "1"
         height: 1em
         display: block
         position: absolute
-        color: black
-        // border: 1px dashed green
+        color: $black
         font-style: normal
         transform: rotate(-45deg) translate(50%, 20%) 
     &--two
@@ -61,7 +60,7 @@
       top: 50%
       transform: translate(50%, -50%)
       border-radius: 0
-      color: black
+      color: $black
       font-size: 50px
       font-style: normal
       text-align: center
@@ -71,7 +70,7 @@
         width: 15px
         height: 15px
         position: absolute
-        background-color: #FFDD00
+        background-color: $yelow
         left: 100%
         transform: translate(-50%, -100%)
       &:before
@@ -81,14 +80,14 @@
         height: 15px
         position: absolute
         transform: translate(-50%, -50%)
-        background-color: #FFDD00
+        background-color: $yelow
     &--three
       right: 0
       bottom: 0
       transform: translate(50%, 0)
       border-radius: 100%
-      background-color: #3AE2CE
-      color: black
+      background-color: $blue
+      color: $black
       font-size: 50px
       font-style: normal
       text-align: center
