@@ -3,10 +3,8 @@
   display: flex
   flex-direction: column
   align-items: center
-  // height: calc(100vh - 141px)
   background-color: $purple
   &__item 
-    // height: calc(100% / 3)
     min-height: 250px
     width: 500px
     font-size: 60px
@@ -25,7 +23,7 @@
     &--three 
       background-color: $yelow
       position: relative
-      overflow: hidden
+      // overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
@@ -86,9 +84,31 @@
       bottom: 0
       transform: translate(50%, 0)
       border-radius: 100%
-      background-color: $blue
+      background-color: $violet
       color: $black
       font-size: 50px
       font-style: normal
       text-align: center
+      border: 5px solid $white
+      &:after
+        content: ''
+        position: absolute
+        transform: translate(-65%, -11%)
+        border: 10px solid transparent
+        transition: 0.5s
+        height: 75px
+        width: 75px
+        border-radius: 30%
+      &:hover
+        transition: 0.5s ease
+        border-color: transparent
+        &:after
+          content: ''
+          position: absolute
+          transform: translate(-65%, -11%)
+          border: 10px solid $white
+          transition: 0.5s
+          height: 75px
+          width: 75px
+          border-radius: 30%
 // news END
