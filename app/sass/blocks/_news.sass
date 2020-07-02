@@ -23,7 +23,6 @@
     &--three 
       background-color: $yelow
       position: relative
-      // overflow: hidden
   &__text 
     font-size: 16px
   &__text-decor 
@@ -102,6 +101,19 @@
         transition: 0.5s ease-in-out
         transform: translate(-5%, -105%)
         z-index: -1
+      &:before
+        content: '3'
+        position: absolute
+        right: 0
+        bottom: 0
+        transform: translate(1px, 1px)
+        border-radius: 100%
+        background-color: $violet
+        width: 70px
+        height: 70px
+        display: block
+        font-size: 50px
+        border-radius: 50%
       &:hover
         &:after
           content: ''
@@ -114,30 +126,4 @@
           transition: 0.5s ease-in-out
           transform: translate(-5%, -105%)
           z-index: -1
-          
-          
-        
-
-        
-        
-        
-        
-        // border: 5px solid transparent
-        // transition: 0.9s ease-in-out
-        // &:after
-        //   content: ''
-        //   position: absolute
-        //   transform: translate(-65%, -11%)
-        //   border: 12px solid white
-        //   // border: 10px solid transparent
-        //   transition: 0.7s ease-in-out
-        //   opacity: 0
-        //   height: 80px
-        //   width: 80px
-        //   
-          
-        
-      
-        
-     
 // news END
