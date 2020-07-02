@@ -32,8 +32,8 @@
   &__text-decor:after 
     content: ':'
   &__icon
-    width: 70px
-    height: 70px
+    width: 78px
+    height: 78px
     background-color: $white
     display: block
     border-radius: 50%
@@ -93,8 +93,8 @@
       &:after
         content: ''
         position: absolute
-        width: 80px
-        height: 80px
+        width: calc(100% + 10px)
+        height: calc(100% + 10px)
         display: block
         border-radius: 50%
         background-color: $white
@@ -105,22 +105,24 @@
         z-index: -1
       &:before
         content: '3'
+        align-items: center
+        justify-content: center
         position: absolute
         right: 0
         bottom: 0
         border-radius: 100%
         background-color: $violet
-        width: 70px
-        height: 70px
-        display: block
+        width: 100%
+        height: 100%
+        display: flex
         font-size: 50px
         border-radius: 50%
       &:hover
         &:after
           content: ''
           position: absolute
-          width: 80px
-          height: 80px
+          width: calc(100% + 10px)
+          height: calc(100% + 10px)
           display: block
           border-radius: 30%
           background-color: transparent
