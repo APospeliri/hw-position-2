@@ -60,7 +60,7 @@
     position: relative
     margin-right: 30px
     position: relative
-    transition: 0.5s
+    // transition: 0.5s
     overflow: hidden
     &:after
       content: ''
@@ -84,17 +84,16 @@
     &:hover
       text-decoration: none
       color: $orange
+      transition: all 0.5s
       &:after
         content: ''
         background-color: $white
         height: 70%
         width: 100%
-        transition: all 0.5s
         right: 0
         top: 0
         transform: translateX(-100%)
       &:before
         background: linear-gradient(to left,  $grey 50%, $orange 50%)
-        transition: all 0.5s
         transform: translateX(50%)
 //header END
