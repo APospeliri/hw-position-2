@@ -61,14 +61,14 @@
     margin-right: 30px
     position: relative
     overflow: hidden
-    transition: all 0.5s
+    transition: all 0.5s ease
     &:after
       content: ''
       position: absolute
       background-color: $white
       height: 70%
       width: 100%
-      transition: all 0.5s
+      transition: all 0.5s ease
       right: 0
       top: 0
       transform: translateX(100%)
@@ -78,13 +78,13 @@
       width: 200%
       height: 2px
       background: linear-gradient(to right, $orange 50%, $grey 50%)
-      transition: all 0.5s 
+      transition: all 0.5s ease
       bottom: 0
       right: 0
     &:hover
       text-decoration: none
       color: $orange
-      transition: all 0.5s
+      transition: all 0.5s ease
       &:after
         content: ''
         background-color: $white
