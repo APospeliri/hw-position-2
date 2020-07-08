@@ -60,7 +60,7 @@
     position: relative
     margin-right: 30px
     position: relative
-    transition: 0.5s
+    transition: all 0.5s
     overflow: hidden
     &:after
       content: ''
@@ -68,7 +68,7 @@
       background-color: $white
       height: 70%
       width: 100%
-      transition: 0.5s ease-in
+      transition: all 0.5s ease
       right: 0
       top: 0
       transform: translateX(100%)
@@ -77,12 +77,11 @@
       position: absolute
       width: 200%
       height: 2px
-      background: linear-gradient(to right, $orange 50%, $grey 50%)
-      // background-color: $grey
-      transition: 0.5s ease- out
+      background: linear-gradient(to right $orange 50% $grey 50%)
+      transition: all 0.5s ease
       bottom: 0
-      transform: translateX(-50%)
-      animation-direction: reverse
+      // transform: translateX(-50%)
+      right: 0
     &:hover
       text-decoration: none
       color: $orange
@@ -91,13 +90,13 @@
         background-color: $white
         height: 70%
         width: 100%
-        transition: 0.5s ease-out
+        transition: all 0.5s
         right: 0
         top: 0
         transform: translateX(-100%)
       &:before
-        background: linear-gradient(to left,  $grey 50%, $orange 50%,)
-        transition: 0.5s ease-out
-        transform: translateX(0%)
-        animation-direction: reverse
+        background: linear-gradient(to left  $grey 50%  $orange 50%)
+        transition: all 0.5s
+        transform: translateX(0)
+        left: 0
 //header END
