@@ -60,7 +60,7 @@
     position: relative
     margin-right: 30px
     position: relative
-    transition: all 0.5s
+    transition: 0.5s
     overflow: hidden
     &:after
       content: ''
@@ -68,7 +68,7 @@
       background-color: $white
       height: 70%
       width: 100%
-      transition: all 0.5s ease
+      transition: all 0.5s ease-in
       right: 0
       top: 0
       transform: translateX(100%)
@@ -77,10 +77,9 @@
       position: absolute
       width: 200%
       height: 2px
-      background: linear-gradient(to right $orange 50% $grey 50%)
-      transition: all 0.5s ease
+      background: linear-gradient(to right, $orange 50%, $grey 50%)
+      transition: all 0.5s ease- out
       bottom: 0
-      // transform: translateX(-50%)
       right: 0
     &:hover
       text-decoration: none
@@ -95,8 +94,7 @@
         top: 0
         transform: translateX(-100%)
       &:before
-        background: linear-gradient(to left  $grey 50%  $orange 50%)
+        background: linear-gradient(to left,  $grey 50%, $orange 50%)
         transition: all 0.5s
-        transform: translateX(0)
-        left: 0
+        transform: translateX(50%)
 //header END
